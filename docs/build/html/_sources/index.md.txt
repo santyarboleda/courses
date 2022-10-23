@@ -13,11 +13,19 @@ Algo 2
 
 ```{toctree}
 :caption: 'Temas:'
-:maxdepth: 2
-
+:maxdepth: 1
+:hidden:
 handling_data
 big_data
+cloud_computing
+data_visualization
+```
+
+
+```{toctree}
+:hidden: 
 notebooks/notebook
+notebooks/notebook2
 ```
 
 # Indices and tables

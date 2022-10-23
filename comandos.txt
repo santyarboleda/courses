@@ -1,0 +1,19 @@
+from lib2to3.pytree import convert
+
+
+pip install rst-to-myst[sphinx]  -> convertir rst a markdown
+
+rst2myst convert <file.rst> -> convertir un archivo a markdown
+
+
+pip install myst-parser   -> para que sphnix interprete markdown
+
+pip install furo  -> otro tema
+
+pip install nbsphinx -> Librería para trabajar con notebooks
+
+pip install pandoc -> Es necesario instalarlo y reiniciar la maquina, sino intentar instalando el pc
+
+pip install IPython
+
+pip install ipykernel --> libreria para ejecutar los notebooks (fundamental para notebooks)
