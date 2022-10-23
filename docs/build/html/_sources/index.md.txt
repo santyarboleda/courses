@@ -3,9 +3,10 @@
 % You can adapt this file completely to your liking, but it should at least
 % contain the root `toctree` directive.
 
-# Welcome to Python, Big data, Machine Learning y Cloud Computing's documentation!
+# Python, Big data, Machine Learning y Cloud Computing
 
-Algo
+**Docente Responsable:** Santiago Arboleda Quiroz
+**Email:** sarboledaq@unal.edu.co
 
 Algo 1
 
@@ -24,8 +25,8 @@ data_visualization
 
 ```{toctree}
 :hidden: 
-notebooks/notebook
-notebooks/notebook2
+
+
 ```
 
 # Indices and tables

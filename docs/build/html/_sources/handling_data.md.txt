@@ -19,6 +19,12 @@ Warning
 Information
 ```
 
+```{admonition} Here's my title
+:class: warning
+
+Here's my admonition content
+```
+
 ```console
 $ pip install pandas
 ```
