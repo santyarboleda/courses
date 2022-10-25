@@ -1,5 +1,5 @@
 [project]
-name = sarboledaq-courses
+name = "sarboledaq-courses"
 authors = [{name: "Santiago Arboleda", email: "sarboledaq@unal.edu.co"}]
 dynamic = ["version", "description"]
 
