@@ -1,6 +1,6 @@
 [project]
 name = sarboledaq-courses
-authors = [{name: "Santiago Arboleda", email: "sarboledaq@unal.edu.co}]
+authors = [{name: "Santiago Arboleda", email: "sarboledaq@unal.edu.co"}]
 dynamic = ["version", "description"]
 
 [project.optional-dependencies]
