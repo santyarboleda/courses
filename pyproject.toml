@@ -1,7 +1,7 @@
 [project]
 name = "sarboledaq-courses"
 authors = [{name= "Santiago Arboleda", email= "sarboledaq@unal.edu.co"}]
-dynamic = ["version", "description"]
+dynamic = ["version"]
 
 [project.optional-dependencies]
 doc = ["sphinx~=4.5.0"]
