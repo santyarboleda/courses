@@ -1,0 +1,2 @@
+[project.optional-dependencies]
+doc = ["sphinx~=4.5.0"]
