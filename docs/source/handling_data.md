@@ -1,0 +1,44 @@
+# Manipulación de datos usando Python
+
+Algo 1
+
+> **Note**
+> This is a note
+
+> **Warning**
+> This is a warning
+
+
+
+```{warning}
+Warning
+```
+
+
+```{note}
+Information
+```
+
+```{admonition} Here's my title
+:class: warning
+
+Here's my admonition content
+```
+
+```console
+$ pip install pandas
+```
+```console
+$ pip install pandas
+```
+
+
+
+## Introducción a Python
+
+Algo 2
+
+
+## Big data
+
+Haddop {doc}`big_data`
