@@ -7,15 +7,4 @@
 notebooks/notebook2
 ```
 
-Tema 1
-
-```console
-pip install numpy
-```
-
-
-
-## Tema 2
-
-
-{doc}`notebooks/notebook`
+Proximamanete

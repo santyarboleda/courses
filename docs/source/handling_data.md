@@ -1,44 +1,26 @@
 # Manipulación de datos usando Python
 
-Algo 1
-
-> **Note**
-> This is a note
-
-> **Warning**
-> This is a warning
-
-
-
-```{warning}
-Warning
-```
-
-
-```{note}
-Information
-```
-
-```{admonition} Here's my title
-:class: warning
-
-Here's my admonition content
-```
-
-```console
-$ pip install pandas
-```
-```console
-$ pip install pandas
+```{toctree}
+:caption: 'Temas:'
+:maxdepth: 2
+:hidden:
+ciencia_datos/introduccion_a_analitica/intro_analitica
+ciencia_datos/intro_python/introduccion
+ciencia_datos/jupyterlab_colab/herramientas
+ciencia_datos/control_de_flujo/control_de_flujo
+ciencia_datos/estructuras_de_datos_1/estructuras_de_datos_1
 ```
 
 
 
-## Introducción a Python
-
-Algo 2
+Este curso pretende mostrar los conceptos necesarios para el manejo y transformación de datos usando Python.
 
 
-## Big data
+**Contenido**
 
-Haddop {doc}`big_data`
+- {doc}`ciencia_datos/introduccion_a_analitica/intro_analitica`
+- {doc}`ciencia_datos/intro_python/introduccion`
+- {doc}`ciencia_datos/jupyterlab_colab/herramientas`
+- {doc}`ciencia_datos/control_de_flujo/control_de_flujo`
+- {doc}`ciencia_datos/estructuras_de_datos_1/estructuras_de_datos_1`
+
