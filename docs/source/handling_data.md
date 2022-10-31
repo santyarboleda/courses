@@ -8,7 +8,8 @@ ciencia_datos/introduccion_a_analitica/intro_analitica
 ciencia_datos/intro_python/introduccion
 ciencia_datos/jupyterlab_colab/herramientas
 ciencia_datos/control_de_flujo/control_de_flujo
-ciencia_datos/estructuras_de_datos_1/estructuras_de_datos_1
+ciencia_datos/estructuras_de_datos/estructuras_de_datos
+ciencia_datos/entrada_salida/entrada_salida
 ```
 
 
@@ -22,5 +23,7 @@ Este curso pretende mostrar los conceptos necesarios para el manejo y transforma
 - {doc}`ciencia_datos/intro_python/introduccion`
 - {doc}`ciencia_datos/jupyterlab_colab/herramientas`
 - {doc}`ciencia_datos/control_de_flujo/control_de_flujo`
-- {doc}`ciencia_datos/estructuras_de_datos_1/estructuras_de_datos_1`
+- {doc}`ciencia_datos/estructuras_de_datos/estructuras_de_datos`
+- {doc}`ciencia_datos/entrada_salida/entrada_salida`
+
 
