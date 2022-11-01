@@ -10,6 +10,9 @@ ciencia_datos/jupyterlab_colab/herramientas
 ciencia_datos/control_de_flujo/control_de_flujo
 ciencia_datos/estructuras_de_datos/estructuras_de_datos
 ciencia_datos/entrada_salida/entrada_salida
+ciencia_datos/errores_excepciones/errores_excepciones
+ciencia_datos/ejemplos_analisis_datos/ejemplos_analisis_datos
+ciencia_datos/manipulacion_datos/manipulacion_datos
 ```
 
 
@@ -25,5 +28,8 @@ Este curso pretende mostrar los conceptos necesarios para el manejo y transforma
 - {doc}`ciencia_datos/control_de_flujo/control_de_flujo`
 - {doc}`ciencia_datos/estructuras_de_datos/estructuras_de_datos`
 - {doc}`ciencia_datos/entrada_salida/entrada_salida`
+- {doc}`ciencia_datos/errores_excepciones/errores_excepciones`
+- {doc}`ciencia_datos/ejemplos_analisis_datos/ejemplos_analisis_datos`
+- {doc}`ciencia_datos/manipulacion_datos/manipulacion_datos`
 
 
