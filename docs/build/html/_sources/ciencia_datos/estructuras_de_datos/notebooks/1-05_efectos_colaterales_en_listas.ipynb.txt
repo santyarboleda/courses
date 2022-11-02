@@ -10,7 +10,7 @@
     "Efectors colaterales en listas y método copy() --- 2:36 min\n",
     "===\n",
     "\n",
-    "* 2:36 min | Última modificación: Octubre 4, 2021 | [YouTube](https://youtu.be/54utr5rgIsQ)"
+    "* 2:36 min | Última modificación: Octubre 4, 2021 "
    ]
   },
   {

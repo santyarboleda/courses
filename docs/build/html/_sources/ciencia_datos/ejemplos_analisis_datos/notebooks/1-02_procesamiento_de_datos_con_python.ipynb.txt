@@ -10,7 +10,7 @@
     "Procesamiento básico de datos usando Python --- 12:22 min\n",
     "===\n",
     "\n",
-    "* 12:22 min | Última modificación: Octubre 12, 2021 | [YouTube](https://youtu.be/cODpUz298Qw)"
+    "* 12:22 min | Última modificación: Octubre 12, 2021 "
    ]
   },
   {

@@ -6,7 +6,7 @@
    "source": [
     "# Selección y manejo de filas --- 5:35 min\n",
     "\n",
-    "* 5:35 min | Última modificación: Octubre 6, 2021 | [YouTube](https://youtu.be/U7TXHQvFgRY)"
+    "* 5:35 min | Última modificación: Octubre 6, 2021 "
    ]
   },
   {

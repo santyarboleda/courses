@@ -8,7 +8,7 @@
     "Introducción a NumPy --- 14:24 min\n",
     "===\n",
     "\n",
-    "* 14:24 min | Última modificación: Octubre 12, 2021 | [YouTube](https://youtu.be/JB6KqEc4G2k)"
+    "* 14:24 min | Última modificación: Octubre 12, 2021 "
    ]
   },
   {

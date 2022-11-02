@@ -21,7 +21,9 @@
         <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
-    <link rel="search" title="Búsqueda" href="../../../search.html" /> 
+    <link rel="search" title="Búsqueda" href="../../../search.html" />
+    <link rel="next" title="Procesamiento básico de datos usando Python — 12:22 min" href="1-02_procesamiento_de_datos_con_python.html" />
+    <link rel="prev" title="Python: Ejemplos de Análisis de Datos" href="../ejemplos_analisis_datos.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,8 +42,37 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Temas:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../handling_data.html">Manipulación de datos usando Python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion_a_analitica/intro_analitica.html">Introducción a Analítica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../intro_python/introduccion.html">Introducción a Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jupyterlab_colab/herramientas.html">Herramientas del Curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../control_de_flujo/control_de_flujo.html">Herramientas de Control de Flujo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estructuras_de_datos/estructuras_de_datos.html">Estructuras de Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../entrada_salida/entrada_salida.html">Entrada y Salida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../errores_excepciones/errores_excepciones.html">Manejo de errores y excepciones</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Operaciones básicas sobre archivos de datos usando Python — 20:33 min</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Carga-de-datos-de-los-eventos-de-los-conductores">Carga de datos de los eventos de los conductores</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Visualización-de-datos">Visualización de datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Reorganización-de-las-columnas">Reorganización de las columnas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Obtención-de-un-subconjunto-de-registros">Obtención de un subconjunto de registros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Filtrado-de-registros">Filtrado de registros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Búsqueda-de-registros-usando-expresiones-regulares">Búsqueda de registros usando expresiones regulares</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Borrado-de-registros-duplicados">Borrado de registros duplicados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Valores-únicos-por-campo">Valores únicos por campo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Ordenamiento-de-registros-con-base-en-un-campo">Ordenamiento de registros con base en un campo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Obtención-de-un-subconjunto-de-columnas">Obtención de un subconjunto de columnas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Escritura-al-disco-como-una-tabla">Escritura al disco como una tabla</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="1-02_procesamiento_de_datos_con_python.html">Procesamiento básico de datos usando Python — 12:22 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-03_numpy.html">Introducción a NumPy — 14:24 min</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos/manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../machine_learning.html">Machine Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../cloud_computing.html">Cloud Computing</a></li>
@@ -62,6 +93,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
+          <li><a href="../ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a> &raquo;</li>
       <li>Operaciones básicas sobre archivos de datos usando Python — 20:33 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/ejemplos_analisis_datos/notebooks/1-01_operaciones_basicas_sobre_datos.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
@@ -353,7 +386,7 @@ div.rendered_html tbody tr:hover {
 <section id="Operaciones-básicas-sobre-archivos-de-datos-usando-Python-—-20:33-min">
 <h1>Operaciones básicas sobre archivos de datos usando Python — 20:33 min<a class="headerlink" href="#Operaciones-básicas-sobre-archivos-de-datos-usando-Python-—-20:33-min" title="Enlazar permanentemente con este título"></a></h1>
 <ul class="simple">
-<li><p>20:33 min | Última modificación: Octubre 12, 2021 | <a class="reference external" href="https://youtu.be/TEIH3yh9Bkg">YouTube</a></p></li>
+<li><p>20:33 min | Última modificación: Octubre 12, 2021</p></li>
 </ul>
 <p>En este video se presenta un ejemplo práctico de la manipulación de archivos de datos en texto usando listas. Si bien, resulta mucho más facil realizar esta tarea usando librerías especializaxad en Python, el objetivo aquí es ejemplificar el uso de las estructuras de datos disponibles en Python puro.</p>
 <p>Al finalizar este tutorial, usted estará en capacidad de:</p>
@@ -1074,7 +1107,10 @@ driverId,eventTime,eventType
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="../ejemplos_analisis_datos.html" class="btn btn-neutral float-left" title="Python: Ejemplos de Análisis de Datos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="1-02_procesamiento_de_datos_con_python.html" class="btn btn-neutral float-right" title="Procesamiento básico de datos usando Python — 12:22 min" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
