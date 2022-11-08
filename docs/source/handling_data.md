@@ -13,6 +13,10 @@ ciencia_datos/entrada_salida/entrada_salida
 ciencia_datos/errores_excepciones/errores_excepciones
 ciencia_datos/ejemplos_analisis_datos/ejemplos_analisis_datos
 ciencia_datos/manipulacion_datos/manipulacion_datos
+ciencia_datos/manipulacion_datos_sqlite/manipulacion_datos_sqlite
+ciencia_datos/ingestion_datos_usando_python/ingestion_datos_usando_python
+ciencia_datos/limpieza_de_datos/limpieza_de_datos
+ciencia_datos/matplotlib/matplotlib
 ```
 
 
@@ -31,5 +35,9 @@ Este curso pretende mostrar los conceptos necesarios para el manejo y transforma
 - {doc}`ciencia_datos/errores_excepciones/errores_excepciones`
 - {doc}`ciencia_datos/ejemplos_analisis_datos/ejemplos_analisis_datos`
 - {doc}`ciencia_datos/manipulacion_datos/manipulacion_datos`
+- {doc}`ciencia_datos/manipulacion_datos_sqlite/manipulacion_datos_sqlite`
+- {doc}`ciencia_datos/ingestion_datos_usando_python/ingestion_datos_usando_python`
+- {doc}`ciencia_datos/limpieza_de_datos/limpieza_de_datos`
+- {doc}`ciencia_datos/matplotlib/matplotlib`
 
 
