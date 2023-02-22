@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Análisis de datos usando Pandas — 11:16 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -86,6 +92,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
@@ -107,10 +119,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../manipulacion_datos.html">Manipulación de Datos con Pandas</a> &raquo;</li>
-      <li>Análisis de datos usando Pandas — 11:16 min</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
+      <li class="breadcrumb-item active">Análisis de datos usando Pandas — 11:16 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/manipulacion_datos/notebooks/2-11_analisis_de_datos_con_pandas.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -230,10 +242,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -399,7 +412,7 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Análisis-de-datos-usando-Pandas-—-11:16-min">
-<h1>Análisis de datos usando Pandas — 11:16 min<a class="headerlink" href="#Análisis-de-datos-usando-Pandas-—-11:16-min" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Análisis de datos usando Pandas — 11:16 min<a class="headerlink" href="#Análisis-de-datos-usando-Pandas-—-11:16-min" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p>11:16 min | Última modificación: Octubre 6, 2021</p></li>
 </ul>
@@ -416,7 +429,7 @@ div.rendered_html tbody tr:hover {
 </ul>
 <p>Este ejemplo está basado en el tutorial de Spark de HortoWorks, disponible en <a class="reference external" href="https://es.hortonworks.com/tutorial/learning-spark-sql-with-zeppelin/">https://es.hortonworks.com/tutorial/learning-spark-sql-with-zeppelin/</a></p>
 <section id="Descripción-de-los-campos-del-archivo">
-<h2>Descripción de los campos del archivo<a class="headerlink" href="#Descripción-de-los-campos-del-archivo" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Descripción de los campos del archivo<a class="headerlink" href="#Descripción-de-los-campos-del-archivo" title="Enlace permanente a este encabezado"></a></h2>
 <p>El archivo usado contiene la información sobre vuelos entre 1987 y 2008, y cuenta con los siguientes campos:</p>
 <ul class="simple">
 <li><p>Year: 1987-2008</p></li>
@@ -452,7 +465,7 @@ div.rendered_html tbody tr:hover {
 <p>Se desea analizar la cantidad de vuelos retrasados por transportador.</p>
 </section>
 <section id="Preparación">
-<h2>Preparación<a class="headerlink" href="#Preparación" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Preparación<a class="headerlink" href="#Preparación" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -468,7 +481,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Carga-de-datos">
-<h2>Carga de datos<a class="headerlink" href="#Carga-de-datos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Carga de datos<a class="headerlink" href="#Carga-de-datos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -529,7 +542,7 @@ memory usage: 22.1+ MB
 </div>
 </section>
 <section id="Estadísticos-de-las-columnas-numéricas">
-<h2>Estadísticos de las columnas numéricas<a class="headerlink" href="#Estadísticos-de-las-columnas-numéricas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Estadísticos de las columnas numéricas<a class="headerlink" href="#Estadísticos-de-las-columnas-numéricas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -599,7 +612,7 @@ max        88.000000         434.000000
 </div>
 </section>
 <section id="Visualización-de-un-subconjunto-de-columnas">
-<h2>Visualización de un subconjunto de columnas<a class="headerlink" href="#Visualización-de-un-subconjunto-de-columnas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Visualización de un subconjunto de columnas<a class="headerlink" href="#Visualización-de-un-subconjunto-de-columnas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -632,7 +645,7 @@ max        88.000000         434.000000
 </div>
 </section>
 <section id="Cómputo-del-total-de-registros-de-la-tabla">
-<h2>Cómputo del total de registros de la tabla<a class="headerlink" href="#Cómputo-del-total-de-registros-de-la-tabla" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Cómputo del total de registros de la tabla<a class="headerlink" href="#Cómputo-del-total-de-registros-de-la-tabla" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -653,7 +666,7 @@ max        88.000000         434.000000
 </div>
 </section>
 <section id="Filtrado-de-registros-para-vuelos-retrasados">
-<h2>Filtrado de registros para vuelos retrasados<a class="headerlink" href="#Filtrado-de-registros-para-vuelos-retrasados" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Filtrado de registros para vuelos retrasados<a class="headerlink" href="#Filtrado-de-registros-para-vuelos-retrasados" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
@@ -683,7 +696,7 @@ max        88.000000         434.000000
 </div>
 </section>
 <section id="Cálculo-del-porcentaje-de-vuelos-retrasados">
-<h2>Cálculo del porcentaje de vuelos retrasados<a class="headerlink" href="#Cálculo-del-porcentaje-de-vuelos-retrasados" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Cálculo del porcentaje de vuelos retrasados<a class="headerlink" href="#Cálculo-del-porcentaje-de-vuelos-retrasados" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -707,7 +720,7 @@ Porcentaje de vuelos retrasados: 19.59%
 </div>
 </section>
 <section id="Copia-de-una-tabla-y-copia-de-columnas">
-<h2>Copia de una tabla y copia de columnas<a class="headerlink" href="#Copia-de-una-tabla-y-copia-de-columnas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Copia de una tabla y copia de columnas<a class="headerlink" href="#Copia-de-una-tabla-y-copia-de-columnas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -732,7 +745,7 @@ Porcentaje de vuelos retrasados: 19.59%
 </div>
 </section>
 <section id="Conteo-de-registros-nulos-en-una-columna">
-<h2>Conteo de registros nulos en una columna<a class="headerlink" href="#Conteo-de-registros-nulos-en-una-columna" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Conteo de registros nulos en una columna<a class="headerlink" href="#Conteo-de-registros-nulos-en-una-columna" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
@@ -752,7 +765,7 @@ Porcentaje de vuelos retrasados: 19.59%
 </div>
 </section>
 <section id="Aplicación-de-una-función-a-una-columna">
-<h2>Aplicación de una función a una columna<a class="headerlink" href="#Aplicación-de-una-función-a-una-columna" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Aplicación de una función a una columna<a class="headerlink" href="#Aplicación-de-una-función-a-una-columna" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
@@ -790,7 +803,7 @@ Porcentaje de vuelos retrasados: 19.59%
 </div>
 </section>
 <section id="id1">
-<h2>Cálculo del porcentaje de vuelos retrasados<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Cálculo del porcentaje de vuelos retrasados<a class="headerlink" href="#id1" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
@@ -813,7 +826,7 @@ Porcentaje de vuelos retrasados: 19.81 %
 </div>
 </section>
 <section id="Cantidad-de-vuelos-retrasados-por-transportador">
-<h2>Cantidad de vuelos retrasados por transportador<a class="headerlink" href="#Cantidad-de-vuelos-retrasados-por-transportador" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Cantidad de vuelos retrasados por transportador<a class="headerlink" href="#Cantidad-de-vuelos-retrasados-por-transportador" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
@@ -847,7 +860,7 @@ Porcentaje de vuelos retrasados: 19.81 %
 </div>
 </section>
 <section id="Retrasos-por-día-de-la-semana">
-<h2>Retrasos por día de la semana<a class="headerlink" href="#Retrasos-por-día-de-la-semana" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Retrasos por día de la semana<a class="headerlink" href="#Retrasos-por-día-de-la-semana" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
@@ -875,7 +888,7 @@ Porcentaje de vuelos retrasados: 19.81 %
 </div>
 </section>
 <section id="Retrasos-por-hora-del-día">
-<h2>Retrasos por hora del día<a class="headerlink" href="#Retrasos-por-hora-del-día" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Retrasos por hora del día<a class="headerlink" href="#Retrasos-por-hora-del-día" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Entrada y Salida &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,13 +14,15 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
-    <link rel="next" title="Impresión con formato usando f-strings — 3:16 min" href="notebooks/1-01_string_formateados.html" />
+    <link rel="next" title="Impresión con formato usando f-strings" href="notebooks/1-01_string_formateados.html" />
     <link rel="prev" title="Procesamiento de un archivo usando list comprenhensions — 6:34 min" href="../estructuras_de_datos/notebooks/2-12_procesamiento_de_archivos_list_comprehensions.html" /> 
 </head>
 
@@ -29,11 +31,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,15 +54,22 @@
 <li class="toctree-l2"><a class="reference internal" href="../control_de_flujo/control_de_flujo.html">Herramientas de Control de Flujo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../estructuras_de_datos/estructuras_de_datos.html">Estructuras de Datos</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Entrada y Salida</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="notebooks/1-01_string_formateados.html">Impresión con formato usando f-strings — 3:16 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notebooks/1-02_strings_templates.html">Template Strings — 3:47 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notebooks/1-03_string_format_method.html">El método format() — 8:38 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notebooks/1-04_old_string_formatting.html">Old school string formatfing — 1:29 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notebooks/1-01_string_formateados.html">Impresión con formato usando f-strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notebooks/1-02_strings_templates.html">Template Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notebooks/1-03_string_format_method.html">El método format()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notebooks/1-04_old_string_formatting.html">Old school string formatfing</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../errores_excepciones/errores_excepciones.html">Manejo de errores y excepciones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ejemplos_analisis_datos/ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../manipulacion_datos/manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../big_data.html">Big Data</a></li>
@@ -78,9 +91,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-      <li>Entrada y Salida</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../handling_data.html">Manipulación de datos usando Python</a></li>
+      <li class="breadcrumb-item active">Entrada y Salida</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/ciencia_datos/entrada_salida/entrada_salida.md.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -115,14 +128,14 @@
 }
 </style>
 <section id="entrada-y-salida">
-<h1>Entrada y Salida<a class="headerlink" href="#entrada-y-salida" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Entrada y Salida<a class="headerlink" href="#entrada-y-salida" title="Enlace permanente a este encabezado"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <ul class="simple">
-<li><p><a class="reference internal" href="notebooks/1-01_string_formateados.html"><span class="doc">Impresión con formato usando f-strings — 3:16 min</span></a></p></li>
-<li><p><a class="reference internal" href="notebooks/1-02_strings_templates.html"><span class="doc">Template Strings — 3:47 min</span></a></p></li>
-<li><p><a class="reference internal" href="notebooks/1-03_string_format_method.html"><span class="doc">El método format() — 8:38 min</span></a></p></li>
-<li><p><a class="reference internal" href="notebooks/1-04_old_string_formatting.html"><span class="doc">Old school string formatfing — 1:29 min</span></a></p></li>
+<li><p><a class="reference internal" href="notebooks/1-01_string_formateados.html"><span class="doc">Impresión con formato usando f-strings</span></a></p></li>
+<li><p><a class="reference internal" href="notebooks/1-02_strings_templates.html"><span class="doc">Template Strings</span></a></p></li>
+<li><p><a class="reference internal" href="notebooks/1-03_string_format_method.html"><span class="doc">El método format()</span></a></p></li>
+<li><p><a class="reference internal" href="notebooks/1-04_old_string_formatting.html"><span class="doc">Old school string formatfing</span></a></p></li>
 </ul>
 </section>
 
@@ -131,7 +144,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
         <a href="../estructuras_de_datos/notebooks/2-12_procesamiento_de_archivos_list_comprehensions.html" class="btn btn-neutral float-left" title="Procesamiento de un archivo usando list comprenhensions — 6:34 min" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="notebooks/1-01_string_formateados.html" class="btn btn-neutral float-right" title="Impresión con formato usando f-strings — 3:16 min" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="notebooks/1-01_string_formateados.html" class="btn btn-neutral float-right" title="Impresión con formato usando f-strings" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

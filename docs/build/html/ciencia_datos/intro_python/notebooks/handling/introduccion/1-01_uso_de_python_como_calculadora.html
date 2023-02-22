@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Uso de Python como una calculadora — 20 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
         <script src="../../../../../_static/jquery.js"></script>
         <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/sphinx_highlight.js"></script>
         <script src="../../../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -44,6 +50,7 @@
               <p class="caption" role="heading"><span class="caption-text">Temas:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../../../../handling_data.html">Manipulación de datos usando Python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../../introduccion_a_analitica/intro_analitica.html">Introducción a Analítica</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../../introduccion.html">Introducción a Python</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Uso de Python como una calculadora — 20 min</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Comentarios">Comentarios</a></li>
@@ -61,9 +68,24 @@
 <li class="toctree-l3"><a class="reference internal" href="1-06_listas.html">Operaciones básicas sobre listas — 7 min</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../jupyterlab_colab/herramientas.html">Herramientas del Curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../control_de_flujo/control_de_flujo.html">Herramientas de Control de Flujo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../estructuras_de_datos/estructuras_de_datos.html">Estructuras de Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../entrada_salida/entrada_salida.html">Entrada y Salida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../errores_excepciones/errores_excepciones.html">Manejo de errores y excepciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../ejemplos_analisis_datos/ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../manipulacion_datos/manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../big_data.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../machine_learning.html">Machine Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../cloud_computing.html">Cloud Computing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../data_visualization.html">Data Visualization</a></li>
 </ul>
@@ -81,10 +103,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../../../introduccion.html">Introducción a Python</a> &raquo;</li>
-      <li>Uso de Python como una calculadora — 20 min</li>
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../../../introduccion.html">Introducción a Python</a></li>
+      <li class="breadcrumb-item active">Uso de Python como una calculadora — 20 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../../../_sources/ciencia_datos/intro_python/notebooks/handling/introduccion/1-01_uso_de_python_como_calculadora.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -204,10 +226,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -373,12 +396,12 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Uso-de-Python-como-una-calculadora-—-20-min">
-<h1>Uso de Python como una calculadora — 20 min<a class="headerlink" href="#Uso-de-Python-como-una-calculadora-—-20-min" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Uso de Python como una calculadora — 20 min<a class="headerlink" href="#Uso-de-Python-como-una-calculadora-—-20-min" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p>20 min | Última modificación: Octubre 4, 2021</p></li>
 </ul>
 <section id="Comentarios">
-<h2>Comentarios<a class="headerlink" href="#Comentarios" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Comentarios<a class="headerlink" href="#Comentarios" title="Enlace permanente a este encabezado"></a></h2>
 <p>Usos:</p>
 <ul class="simple">
 <li><p>Documentar el código (El <strong>por qué</strong>, no el <strong>como</strong>)</p></li>
@@ -472,7 +495,7 @@ TODOC:   Necesita documentación
 </div>
 </section>
 <section id="Números">
-<h2>Números<a class="headerlink" href="#Números" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Números<a class="headerlink" href="#Números" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
@@ -838,7 +861,7 @@ float
 </div>
 </section>
 <section id="Booleanos">
-<h2>Booleanos<a class="headerlink" href="#Booleanos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Booleanos<a class="headerlink" href="#Booleanos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
@@ -1154,7 +1177,7 @@ False
 </div>
 </section>
 <section id="None-(Tipo-Nulo)">
-<h2>None (Tipo Nulo)<a class="headerlink" href="#None-(Tipo-Nulo)" title="Enlazar permanentemente con este título"></a></h2>
+<h2>None (Tipo Nulo)<a class="headerlink" href="#None-(Tipo-Nulo)" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
@@ -1244,7 +1267,7 @@ False
 </div>
 </section>
 <section id="Variables">
-<h2>Variables<a class="headerlink" href="#Variables" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Variables<a class="headerlink" href="#Variables" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
@@ -1391,7 +1414,7 @@ False
 </div>
 </section>
 <section id="Strings">
-<h2>Strings<a class="headerlink" href="#Strings" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Strings<a class="headerlink" href="#Strings" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>

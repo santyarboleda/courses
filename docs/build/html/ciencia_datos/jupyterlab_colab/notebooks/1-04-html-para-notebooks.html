@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML para notebooks &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,14 +14,18 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
         <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
-    <link rel="search" title="Búsqueda" href="../../../search.html" /> 
+    <link rel="search" title="Búsqueda" href="../../../search.html" />
+    <link rel="next" title="Herramientas de Control de Flujo" href="../../control_de_flujo/control_de_flujo.html" />
+    <link rel="prev" title="Lenguaje Markdown" href="1-03-uso-de-markdown-en-jupyter.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -29,19 +33,70 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Temas:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../handling_data.html">Manipulación de datos usando Python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion_a_analitica/intro_analitica.html">Introducción a Analítica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../intro_python/introduccion.html">Introducción a Python</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../herramientas.html">Herramientas del Curso</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="1-01_google_colab.html">Uso de básico de Google Colaboratory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-02-magic-cells.html">Uso de %%bash y %%writefile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-03-uso-de-markdown-en-jupyter.html">Lenguaje Markdown</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">HTML para notebooks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Introducción">Introducción</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Parágrafos,-encabezados-y-citas">Parágrafos, encabezados y citas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Enfasis">Enfasis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Listas-sin-numeración">Listas sin numeración</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Listas-enumeradas">Listas enumeradas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Listas-tipo-diccionario">Listas tipo diccionario</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Vínculos">Vínculos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Vínculos-tipo-referencia">Vínculos tipo referencia</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Imágenes">Imágenes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Código-fuente-y-salida-de-programas">Código fuente y salida de programas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Tablas">Tablas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Lineas-horizontales">Lineas horizontales</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Alineación-del-Texto">Alineación del Texto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Líneas-en-blanco">Líneas en blanco</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Tamaño-del-texto">Tamaño del texto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Comentarios">Comentarios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Efectos-sobre-el-texto">Efectos sobre el texto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Cajas">Cajas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Teclado">Teclado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Controles">Controles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Símbolos">Símbolos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../control_de_flujo/control_de_flujo.html">Herramientas de Control de Flujo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estructuras_de_datos/estructuras_de_datos.html">Estructuras de Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../entrada_salida/entrada_salida.html">Entrada y Salida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../errores_excepciones/errores_excepciones.html">Manejo de errores y excepciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ejemplos_analisis_datos/ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos/manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../machine_learning.html">Machine Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../cloud_computing.html">Cloud Computing</a></li>
@@ -61,8 +116,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>HTML para notebooks</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../herramientas.html">Herramientas del Curso</a></li>
+      <li class="breadcrumb-item active">HTML para notebooks</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/jupyterlab_colab/notebooks/1-04-html-para-notebooks.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -182,10 +239,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -351,12 +409,12 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="HTML-para-notebooks">
-<h1>HTML para notebooks<a class="headerlink" href="#HTML-para-notebooks" title="Enlazar permanentemente con este título"></a></h1>
+<h1>HTML para notebooks<a class="headerlink" href="#HTML-para-notebooks" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p><em>60 min</em> | Última modificación: Junio 22, 2019.</p></li>
 </ul>
 <section id="Introducción">
-<h2>Introducción<a class="headerlink" href="#Introducción" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Introducción<a class="headerlink" href="#Introducción" title="Enlace permanente a este encabezado"></a></h2>
 <ul class="simple">
 <li><p>El formato de un libro de Jupyter se realiza usando Markdown.</p></li>
 <li><p>La sintaxis explicada en este documento se aplica a los documentos creados en RStudio usando RMarkdown.</p></li>
@@ -367,7 +425,7 @@ div.rendered_html tbody tr:hover {
 </ul>
 </section>
 <section id="Parágrafos,-encabezados-y-citas">
-<h2>Parágrafos, encabezados y citas<a class="headerlink" href="#Parágrafos,-encabezados-y-citas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Parágrafos, encabezados y citas<a class="headerlink" href="#Parágrafos,-encabezados-y-citas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -601,7 +659,7 @@ electrónico usando texto plano.
 </div>
 </section>
 <section id="Enfasis">
-<h2>Enfasis<a class="headerlink" href="#Enfasis" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Enfasis<a class="headerlink" href="#Enfasis" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
@@ -635,7 +693,7 @@ electrónico usando texto plano.
 </div>
 </section>
 <section id="Listas-sin-numeración">
-<h2>Listas sin numeración<a class="headerlink" href="#Listas-sin-numeración" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Listas sin numeración<a class="headerlink" href="#Listas-sin-numeración" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
@@ -661,7 +719,7 @@ electrónico usando texto plano.
 </div>
 </section>
 <section id="Listas-enumeradas">
-<h2>Listas enumeradas<a class="headerlink" href="#Listas-enumeradas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Listas enumeradas<a class="headerlink" href="#Listas-enumeradas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
@@ -733,7 +791,7 @@ electrónico usando texto plano.
 </div>
 </section>
 <section id="Listas-tipo-diccionario">
-<h2>Listas tipo diccionario<a class="headerlink" href="#Listas-tipo-diccionario" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Listas tipo diccionario<a class="headerlink" href="#Listas-tipo-diccionario" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
@@ -761,7 +819,7 @@ electrónico usando texto plano.
 </div>
 </section>
 <section id="Vínculos">
-<h2>Vínculos<a class="headerlink" href="#Vínculos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Vínculos<a class="headerlink" href="#Vínculos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
@@ -842,7 +900,7 @@ electrónico usando texto plano.
 </div>
 </section>
 <section id="Vínculos-tipo-referencia">
-<h2>Vínculos tipo referencia<a class="headerlink" href="#Vínculos-tipo-referencia" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Vínculos tipo referencia<a class="headerlink" href="#Vínculos-tipo-referencia" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
@@ -875,7 +933,7 @@ Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.</div>
 </div>
 </section>
 <section id="Imágenes">
-<h2>Imágenes<a class="headerlink" href="#Imágenes" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Imágenes<a class="headerlink" href="#Imágenes" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
@@ -908,7 +966,7 @@ Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.</div>
 </div>
 </section>
 <section id="Código-fuente-y-salida-de-programas">
-<h2>Código fuente y salida de programas<a class="headerlink" href="#Código-fuente-y-salida-de-programas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Código fuente y salida de programas<a class="headerlink" href="#Código-fuente-y-salida-de-programas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
@@ -950,7 +1008,7 @@ O se puede colocar código en linea <code>cat out.1 out.2</code>.
 </div>
 </section>
 <section id="Tablas">
-<h2>Tablas<a class="headerlink" href="#Tablas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Tablas<a class="headerlink" href="#Tablas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
@@ -1070,7 +1128,7 @@ O se puede colocar código en linea <code>cat out.1 out.2</code>.
 </div>
 </section>
 <section id="Lineas-horizontales">
-<h2>Lineas horizontales<a class="headerlink" href="#Lineas-horizontales" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Lineas horizontales<a class="headerlink" href="#Lineas-horizontales" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
@@ -1096,7 +1154,7 @@ O se puede colocar código en linea <code>cat out.1 out.2</code>.
 </div>
 </section>
 <section id="Alineación-del-Texto">
-<h2>Alineación del Texto<a class="headerlink" href="#Alineación-del-Texto" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Alineación del Texto<a class="headerlink" href="#Alineación-del-Texto" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
@@ -1144,7 +1202,7 @@ O se puede colocar código en linea <code>cat out.1 out.2</code>.
 </div>
 </section>
 <section id="Líneas-en-blanco">
-<h2>Líneas en blanco<a class="headerlink" href="#Líneas-en-blanco" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Líneas en blanco<a class="headerlink" href="#Líneas-en-blanco" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
@@ -1170,7 +1228,7 @@ texto
 </div>
 </section>
 <section id="Tamaño-del-texto">
-<h2>Tamaño del texto<a class="headerlink" href="#Tamaño-del-texto" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Tamaño del texto<a class="headerlink" href="#Tamaño-del-texto" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
@@ -1218,7 +1276,7 @@ texto
 </div>
 </section>
 <section id="Comentarios">
-<h2>Comentarios<a class="headerlink" href="#Comentarios" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Comentarios<a class="headerlink" href="#Comentarios" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
@@ -1236,7 +1294,7 @@ texto
 </div>
 <!-- comentario --></section>
 <section id="Efectos-sobre-el-texto">
-<h2>Efectos sobre el texto<a class="headerlink" href="#Efectos-sobre-el-texto" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Efectos sobre el texto<a class="headerlink" href="#Efectos-sobre-el-texto" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
@@ -1316,7 +1374,7 @@ Texto <mark> resaltado </mark></div>
 </div>
 </section>
 <section id="Cajas">
-<h2>Cajas<a class="headerlink" href="#Cajas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Cajas<a class="headerlink" href="#Cajas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
@@ -1395,7 +1453,7 @@ Caja con borde doble
 </div>
 </section>
 <section id="Teclado">
-<h2>Teclado<a class="headerlink" href="#Teclado" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Teclado<a class="headerlink" href="#Teclado" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
@@ -1413,7 +1471,7 @@ Caja con borde doble
 </div>
 </section>
 <section id="Controles">
-<h2>Controles<a class="headerlink" href="#Controles" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Controles<a class="headerlink" href="#Controles" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
@@ -1550,7 +1608,7 @@ Caja con borde doble
 </div>
 </section>
 <section id="Símbolos">
-<h2>Símbolos<a class="headerlink" href="#Símbolos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Símbolos<a class="headerlink" href="#Símbolos" title="Enlace permanente a este encabezado"></a></h2>
 <p>Haga click <a class="reference external" href="https://www.w3schools.com/charsets/ref_utf_symbols.asp">Aquí</a>.</p>
 </section>
 </section>
@@ -1558,7 +1616,10 @@ Caja con borde doble
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="1-03-uso-de-markdown-en-jupyter.html" class="btn btn-neutral float-left" title="Lenguaje Markdown" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../../control_de_flujo/control_de_flujo.html" class="btn btn-neutral float-right" title="Herramientas de Control de Flujo" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

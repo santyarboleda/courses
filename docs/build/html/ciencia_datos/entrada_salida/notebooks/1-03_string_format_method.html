@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El método format() — 8:38 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
+  <title>El método format() &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -22,8 +24,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="Old school string formatfing — 1:29 min" href="1-04_old_string_formatting.html" />
-    <link rel="prev" title="Template Strings — 3:47 min" href="1-02_strings_templates.html" /> 
+    <link rel="next" title="Old school string formatfing" href="1-04_old_string_formatting.html" />
+    <link rel="prev" title="Template Strings" href="1-02_strings_templates.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -50,15 +56,22 @@
 <li class="toctree-l2"><a class="reference internal" href="../../control_de_flujo/control_de_flujo.html">Herramientas de Control de Flujo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../estructuras_de_datos/estructuras_de_datos.html">Estructuras de Datos</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../entrada_salida.html">Entrada y Salida</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="1-01_string_formateados.html">Impresión con formato usando f-strings — 3:16 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-02_strings_templates.html">Template Strings — 3:47 min</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">El método format() — 8:38 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-04_old_string_formatting.html">Old school string formatfing — 1:29 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-01_string_formateados.html">Impresión con formato usando f-strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-02_strings_templates.html">Template Strings</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">El método format()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-04_old_string_formatting.html">Old school string formatfing</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../errores_excepciones/errores_excepciones.html">Manejo de errores y excepciones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ejemplos_analisis_datos/ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos/manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
@@ -80,10 +93,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../entrada_salida.html">Entrada y Salida</a> &raquo;</li>
-      <li>El método format() — 8:38 min</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../entrada_salida.html">Entrada y Salida</a></li>
+      <li class="breadcrumb-item active">El método format()</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/entrada_salida/notebooks/1-03_string_format_method.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -203,10 +216,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -371,10 +385,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<section id="El-método-format()-—-8:38-min">
-<h1>El método format() — 8:38 min<a class="headerlink" href="#El-método-format()-—-8:38-min" title="Enlazar permanentemente con este título"></a></h1>
+<section id="El-método-format()">
+<h1>El método format()<a class="headerlink" href="#El-método-format()" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
-<li><p>8:38 min | Última modificación: Octubre 4, 2021</p></li>
+<li><p>Duración de la lección: 8:38 min</p></li>
 </ul>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
@@ -649,8 +663,8 @@ a: 100; b: 101; c: 102
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
-        <a href="1-02_strings_templates.html" class="btn btn-neutral float-left" title="Template Strings — 3:47 min" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="1-04_old_string_formatting.html" class="btn btn-neutral float-right" title="Old school string formatfing — 1:29 min" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="1-02_strings_templates.html" class="btn btn-neutral float-left" title="Template Strings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="1-04_old_string_formatting.html" class="btn btn-neutral float-right" title="Old school string formatfing" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

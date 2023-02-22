@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transacciones ACID (Insert/ Update / Delete) en SQLite3 — 6:46 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -66,6 +72,12 @@
 <li class="toctree-l3"><a class="reference internal" href="1-04_transformacion_de_datos_en_sqlite3.html">Transformación de datos en SQLite3 — 7:44 min</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
@@ -87,10 +99,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a> &raquo;</li>
-      <li>Transacciones ACID (Insert/ Update / Delete) en SQLite3 — 6:46 min</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+      <li class="breadcrumb-item active">Transacciones ACID (Insert/ Update / Delete) en SQLite3 — 6:46 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/manipulacion_datos_sqlite/notebooks/1-03_transacciones_acid_sqlite3.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -210,10 +222,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -379,7 +392,7 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Transacciones-ACID-(Insert/-Update-/-Delete)-en-SQLite3-—-6:46-min">
-<h1>Transacciones ACID (Insert/ Update / Delete) en SQLite3 — 6:46 min<a class="headerlink" href="#Transacciones-ACID-(Insert/-Update-/-Delete)-en-SQLite3-—-6:46-min" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Transacciones ACID (Insert/ Update / Delete) en SQLite3 — 6:46 min<a class="headerlink" href="#Transacciones-ACID-(Insert/-Update-/-Delete)-en-SQLite3-—-6:46-min" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p>6:46 min | Última modificación: Octubre 14, 2021 | <a class="reference external" href="https://youtu.be/TaDZcKq1E5Y">YouTube</a></p></li>
 </ul>
@@ -399,13 +412,13 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <section id="Creación-de-la-tabla">
-<h2>Creación de la tabla<a class="headerlink" href="#Creación-de-la-tabla" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Creación de la tabla<a class="headerlink" href="#Creación-de-la-tabla" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">CREATE TABLE persons (</span>
 <span class="sd">    id INT,</span>
 <span class="sd">    firstname VARCHAR(10),</span>
@@ -430,7 +443,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="INSERT">
-<h2>INSERT<a class="headerlink" href="#INSERT" title="Enlazar permanentemente con este título"></a></h2>
+<h2>INSERT<a class="headerlink" href="#INSERT" title="Enlace permanente a este encabezado"></a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>INSERT [INTO] tbl_name [(column_name,...)]
 {VALUES | VALUE}
 ({expression|DEFAULT},...)[,(...),...];
@@ -445,7 +458,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># Los valores están en el mismo orden de los campos.</span>
 <span class="c1">#</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">INSERT INTO</span>
 <span class="sd">    persons</span>
 <span class="sd">VALUES</span>
@@ -475,7 +488,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># Los valores deben estar en el mismo orden de los campos.</span>
 <span class="c1">#</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">INSERT INTO</span>
 <span class="sd">    persons</span>
 <span class="sd">VALUES</span>
@@ -508,7 +521,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># Se indica en cuales campos se inserta la información.</span>
 <span class="c1">#</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">INSERT INTO persons (color,firstname,surname) VALUES</span>
 <span class="sd">    (&quot;violet&quot;,&quot;Vivian&quot;, &quot;Kinney&quot;),</span>
 <span class="sd">    (&quot;blue&quot;,&quot;Hope&quot;,&quot;Kingston&quot;),</span>
@@ -543,7 +556,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># Se indica en cual campo se inserta la información</span>
 <span class="c1">#</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">INSERT INTO</span>
 <span class="sd">    persons (firstname)</span>
 <span class="sd">VALUES</span>
@@ -580,7 +593,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># Se usa NULL para los campos que no tienen información.</span>
 <span class="c1">#</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">INSERT INTO</span>
 <span class="sd">    persons</span>
 <span class="sd">VALUES</span>
@@ -610,7 +623,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="UPDATE">
-<h2>UPDATE<a class="headerlink" href="#UPDATE" title="Enlazar permanentemente con este título"></a></h2>
+<h2>UPDATE<a class="headerlink" href="#UPDATE" title="Enlace permanente a este encabezado"></a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>UPDATE tbl_name
 (SET col_name={expression|DEFAULT}, ...)
 [WHERE where_conditions];
@@ -632,7 +645,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># Se usa NULL para los campos que no tienen información.</span>
 <span class="c1">#</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">UPDATE persons SET</span>
 <span class="sd">    id = 8,</span>
 <span class="sd">    color = &quot;gray&quot;</span>
@@ -669,7 +682,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># Se actualiza el campo con base en el indicador.</span>
 <span class="c1">#</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">UPDATE</span>
 <span class="sd">    persons</span>
 <span class="sd">SET</span>
@@ -701,13 +714,13 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="DELETE">
-<h2>DELETE<a class="headerlink" href="#DELETE" title="Enlazar permanentemente con este título"></a></h2>
+<h2>DELETE<a class="headerlink" href="#DELETE" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">DELETE FROM</span>
 <span class="sd">    persons</span>
 <span class="sd">WHERE</span>

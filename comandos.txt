@@ -1,5 +1,6 @@
 from lib2to3.pytree import convert
 
+pip install sphinx sphinx_rtd_theme
 
 pip install rst-to-myst[sphinx]  -> convertir rst a markdown
 
@@ -17,3 +18,8 @@ pip install pandoc -> Es necesario instalarlo y reiniciar la maquina, sino inten
 pip install IPython
 
 pip install ipykernel --> libreria para ejecutar los notebooks (fundamental para notebooks)
+
+
+
+
+make html --- ejecutar adentro de docs

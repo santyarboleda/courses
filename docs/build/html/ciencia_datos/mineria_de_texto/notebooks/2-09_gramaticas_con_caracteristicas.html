@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gramáticas con características &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,14 +14,18 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
         <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
-    <link rel="search" title="Búsqueda" href="../../../search.html" /> 
+    <link rel="search" title="Búsqueda" href="../../../search.html" />
+    <link rel="next" title="Consultas en bases de datos" href="2-10_consultas_en_bd.html" />
+    <link rel="prev" title="Gramáticas" href="2-08_gramaticas.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -29,19 +33,64 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Temas:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../handling_data.html">Manipulación de datos usando Python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion_a_analitica/intro_analitica.html">Introducción a Analítica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../intro_python/introduccion.html">Introducción a Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jupyterlab_colab/herramientas.html">Herramientas del Curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../control_de_flujo/control_de_flujo.html">Herramientas de Control de Flujo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estructuras_de_datos/estructuras_de_datos.html">Estructuras de Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../entrada_salida/entrada_salida.html">Entrada y Salida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../errores_excepciones/errores_excepciones.html">Manejo de errores y excepciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ejemplos_analisis_datos/ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos/manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../mineria_de_texto.html">Minería de texto</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="1-01_operaciones_basicas_sobre_texto.html">Operaciones básicas sobre texto usando NLTK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-01_pyparsing.html">Pyparsing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-01_TextBlob.html">Introducción al procesamiento básico de texto usando TextBlob</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-02_expresiones_regulares.html">Expresiones regulares en NLTK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-03_transformaciones_basicas.html">Transformaciones básicas de texto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-04_part-of-speach_tagging.html">Part-of-Spech (POS) Tagging / Categorización Léxica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-05_tagging_automatico.html">Tagging automático</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-06_extraccion_de_informaacion.html">Extracción de información</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-07_reconocimiento_de_entidades_y_relaciones.html">Reconocimiento de entidades y extracción de relaciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2-08_gramaticas.html">Gramáticas</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Gramáticas con características</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Concordancia-gramatical">Concordancia gramatical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Terminologia">Terminologia</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Subcategorización">Subcategorización</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="2-10_consultas_en_bd.html">Consultas en bases de datos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2-11_logica_de_primer_orden.html">Lógica de primer orden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2-12_shallow-parsing.html">Shallow Parsing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="3-03_esquemas_de_representacion.html">Esquemas de representacion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="3-05_clasificacion_de_textos.html">Construcción de clasificadores</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../machine_learning.html">Machine Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../cloud_computing.html">Cloud Computing</a></li>
@@ -61,8 +110,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Gramáticas con características</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../mineria_de_texto.html">Minería de texto</a></li>
+      <li class="breadcrumb-item active">Gramáticas con características</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/mineria_de_texto/notebooks/2-09_gramaticas_con_caracteristicas.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -182,10 +233,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -351,7 +403,7 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Gramáticas-con-características">
-<h1>Gramáticas con características<a class="headerlink" href="#Gramáticas-con-características" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Gramáticas con características<a class="headerlink" href="#Gramáticas-con-características" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p><em>30 min</em> | Última modificación: Diciembre 10, 2020</p></li>
 </ul>
@@ -378,7 +430,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <section id="Concordancia-gramatical">
-<h2>Concordancia gramatical<a class="headerlink" href="#Concordancia-gramatical" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Concordancia gramatical<a class="headerlink" href="#Concordancia-gramatical" title="Enlace permanente a este encabezado"></a></h2>
 <p><strong>Formas de conjugación de un verbo</strong></p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>          singular         plural
 -------------------------------------
@@ -510,7 +562,7 @@ Overwriting feat0.fcfg
 </div>
 </section>
 <section id="Terminologia">
-<h2>Terminologia<a class="headerlink" href="#Terminologia" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Terminologia<a class="headerlink" href="#Terminologia" title="Enlace permanente a este encabezado"></a></h2>
 <p>La notación <code class="docutils literal notranslate"><span class="pre">+/-</span></code> se usa para representar <code class="docutils literal notranslate"><span class="pre">true/false</span></code>. En el siguiente ejemplo <code class="docutils literal notranslate"><span class="pre">AUX</span></code> indica si el verbo es usado como auxiliar.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">V</span><span class="p">[</span><span class="n">TENSE</span><span class="o">=</span><span class="n">pres</span><span class="p">,</span> <span class="n">AUX</span><span class="o">=+</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="s1">&#39;can&#39;</span>
 <span class="n">V</span><span class="p">[</span><span class="n">TENSE</span><span class="o">=</span><span class="n">pres</span><span class="p">,</span> <span class="n">AUX</span><span class="o">=-</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="s1">&#39;may&#39;</span>
@@ -729,7 +781,7 @@ fem
 <span class="c1">##</span>
 <span class="nb">print</span><span class="p">(</span>
     <span class="n">nltk</span><span class="o">.</span><span class="n">FeatStruct</span><span class="p">(</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        [</span>
 <span class="sd">            NAME=&#39;Lee&#39;,</span>
 <span class="sd">            ADDRESS=(1)[</span>
@@ -770,7 +822,7 @@ fem
 <span class="c1">##</span>
 <span class="nb">print</span><span class="p">(</span>
     <span class="n">nltk</span><span class="o">.</span><span class="n">FeatStruct</span><span class="p">(</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        [</span>
 <span class="sd">            A=&#39;a&#39;,</span>
 <span class="sd">            B=(1)[C=&#39;c&#39;],</span>
@@ -849,7 +901,7 @@ None
 <span class="c1">## Unificación con compartición de estructuras</span>
 <span class="c1">##</span>
 <span class="n">fs0</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FeatStruct</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        [</span>
 <span class="sd">            NAME=Lee,</span>
 <span class="sd">            ADDRESS=[</span>
@@ -894,7 +946,7 @@ None
 <span class="c1">## Aumento con nuevos datos</span>
 <span class="c1">##</span>
 <span class="n">fs1</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FeatStruct</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        [</span>
 <span class="sd">            SPOUSE = [</span>
 <span class="sd">                ADDRESS = [CITY = Paris]</span>
@@ -935,7 +987,7 @@ None
 <span class="c1">## Comportamiento diferente</span>
 <span class="c1">##</span>
 <span class="n">fs2</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FeatStruct</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        [</span>
 <span class="sd">            NAME = Lee,</span>
 <span class="sd">            ADDRESS = (1)[NUMBER=74, STREET=&#39;rue Pascal&#39;],</span>
@@ -1014,7 +1066,7 @@ None
 </div>
 </section>
 <section id="Subcategorización">
-<h2>Subcategorización<a class="headerlink" href="#Subcategorización" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Subcategorización<a class="headerlink" href="#Subcategorización" title="Enlace permanente a este encabezado"></a></h2>
 <p><strong>Gramática original</strong>.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>S -&gt; NP[NUM=?n] VP[NUM=?n]
 
@@ -1359,7 +1411,10 @@ for tree in cp.parse(tokens):
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="2-08_gramaticas.html" class="btn btn-neutral float-left" title="Gramáticas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="2-10_consultas_en_bd.html" class="btn btn-neutral float-right" title="Consultas en bases de datos" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

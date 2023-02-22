@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fusión (merging/join) de datasets — 14:56 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -77,6 +83,13 @@
 <li class="toctree-l3"><a class="reference internal" href="2-13-python4excel.html">Pandas para usuarios de Microsoft Excel — 19:50 min</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
@@ -98,10 +111,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../manipulacion_datos.html">Manipulación de Datos con Pandas</a> &raquo;</li>
-      <li>Fusión (merging/join) de datasets — 14:56 min</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
+      <li class="breadcrumb-item active">Fusión (merging/join) de datasets — 14:56 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/manipulacion_datos/notebooks/1-07_joins.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -221,10 +234,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -390,7 +404,7 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Fusión-(merging/join)-de-datasets-—-14:56-min">
-<h1>Fusión (merging/join) de datasets — 14:56 min<a class="headerlink" href="#Fusión-(merging/join)-de-datasets-—-14:56-min" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Fusión (merging/join) de datasets — 14:56 min<a class="headerlink" href="#Fusión-(merging/join)-de-datasets-—-14:56-min" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p>14:56 min | Última modificación: Octubre 6, 2021</p></li>
 </ul>
@@ -406,7 +420,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <section id="Fusión-uno-a-uno-sobre-columnas-comunes">
-<h2>Fusión uno-a-uno sobre columnas comunes<a class="headerlink" href="#Fusión-uno-a-uno-sobre-columnas-comunes" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Fusión uno-a-uno sobre columnas comunes<a class="headerlink" href="#Fusión-uno-a-uno-sobre-columnas-comunes" title="Enlace permanente a este encabezado"></a></h2>
 <p>El join se ejecuta sobre las columnas que tienen los mismos nombres en ambas tablas.</p>
 <p><strong>Creación y carga del primer dataframe.</strong></p>
 <div class="nbinput docutils container">
@@ -528,7 +542,7 @@ Overwriting /tmp/bonus.csv
 </div>
 </section>
 <section id="Fusión-uno-a-uno-con-registros-incompletos">
-<h2>Fusión uno-a-uno con registros incompletos<a class="headerlink" href="#Fusión-uno-a-uno-con-registros-incompletos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Fusión uno-a-uno con registros incompletos<a class="headerlink" href="#Fusión-uno-a-uno-con-registros-incompletos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -646,7 +660,7 @@ Overwriting /tmp/bonus.csv
 </div>
 </section>
 <section id="Fusión-muchos-a-uno">
-<h2>Fusión muchos-a-uno<a class="headerlink" href="#Fusión-muchos-a-uno" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Fusión muchos-a-uno<a class="headerlink" href="#Fusión-muchos-a-uno" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -786,7 +800,7 @@ Writing /tmp/sales.csv
 </div>
 </section>
 <section id="Fusión-muchos-a-muchos">
-<h2>Fusión muchos-a-muchos<a class="headerlink" href="#Fusión-muchos-a-muchos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Fusión muchos-a-muchos<a class="headerlink" href="#Fusión-muchos-a-muchos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
@@ -936,7 +950,7 @@ Writing /tmp/lines.csv
 </div>
 </section>
 <section id="Parámetros-left_on,-right_on">
-<h2>Parámetros left_on, right_on<a class="headerlink" href="#Parámetros-left_on,-right_on" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Parámetros left_on, right_on<a class="headerlink" href="#Parámetros-left_on,-right_on" title="Enlace permanente a este encabezado"></a></h2>
 <p>El campo clave tiene nombres diferentes en cada tabla.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
@@ -1136,7 +1150,7 @@ Overwriting /tmp/bonus.csv
 </div>
 </section>
 <section id="Joins-usando-el-parámetro-how">
-<h2>Joins usando el parámetro how<a class="headerlink" href="#Joins-usando-el-parámetro-how" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Joins usando el parámetro how<a class="headerlink" href="#Joins-usando-el-parámetro-how" title="Enlace permanente a este encabezado"></a></h2>
 <img alt="joins.png" src="../../../_images/joins.png" />
 <p>Ambas tablas tienen algunos campos en comun (y otros diferentes!).</p>
 <div class="nbinput docutils container">
@@ -1577,7 +1591,7 @@ Writing /tmp/clients_b.csv
 </div>
 </section>
 <section id="Sufijos">
-<h2>Sufijos<a class="headerlink" href="#Sufijos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Sufijos<a class="headerlink" href="#Sufijos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>

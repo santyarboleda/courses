@@ -7,10 +7,10 @@
     "tags": []
    },
    "source": [
-    "Ámbito y variables en funciones --- 7:24 min\n",
+    "Ámbito y variables en funciones\n",
     "===\n",
     "\n",
-    "* 7:24 min | Última modificación: Octubre 5, 2021 "
+    "* Duración de la lección: 7:24 min"
    ]
   },
   {

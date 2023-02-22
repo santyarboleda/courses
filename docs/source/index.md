@@ -5,6 +5,11 @@
 
 # Python, Big data, Machine Learning y Cloud Computing
 
+Este es una sitio diseñado como repositorio de contenido de los cursos que brinda el docente Santiago Arboleda Quiroz en instituciones de eduación superior o particulares.
+
+Santiago, es un Ingeniero Informático y Magister en Ingeniería - Analítica con mas de 10 años de experiencia desarrollados en temas de analítica en proyectos de caracter nacional e internacional. Actualmente se desempeña como Cientifico de datos, Ingeniero de Machine Learning y Arquitecto de soluciones para una compañía de servicios compartidos en Colombia.
+
+
 Autor: Santiago Arboleda Quiroz
 
 Email: sarboledaq@unal.edu.co

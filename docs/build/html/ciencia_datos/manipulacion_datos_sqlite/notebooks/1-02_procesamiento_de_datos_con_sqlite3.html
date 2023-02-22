@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Procesamiento de datos con SQLite3 — 12:13 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -71,6 +77,12 @@
 <li class="toctree-l3"><a class="reference internal" href="1-04_transformacion_de_datos_en_sqlite3.html">Transformación de datos en SQLite3 — 7:44 min</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
@@ -92,10 +104,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a> &raquo;</li>
-      <li>Procesamiento de datos con SQLite3 — 12:13 min</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+      <li class="breadcrumb-item active">Procesamiento de datos con SQLite3 — 12:13 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/manipulacion_datos_sqlite/notebooks/1-02_procesamiento_de_datos_con_sqlite3.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -215,10 +227,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -384,14 +397,14 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Procesamiento-de-datos-con-SQLite3-—-12:13-min">
-<h1>Procesamiento de datos con SQLite3 — 12:13 min<a class="headerlink" href="#Procesamiento-de-datos-con-SQLite3-—-12:13-min" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Procesamiento de datos con SQLite3 — 12:13 min<a class="headerlink" href="#Procesamiento-de-datos-con-SQLite3-—-12:13-min" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p>12:13 min | Última modificación: Octubre 14, 2021 | <a class="reference external" href="https://youtu.be/8LvpTsN_h1U">YouTube</a></p></li>
 </ul>
 <p>Este tutorial esta basado en <a class="reference external" href="https://es.hortonworks.com/tutorial/how-to-process-data-with-apache-hive/">https://es.hortonworks.com/tutorial/how-to-process-data-with-apache-hive/</a></p>
 <p>El objetivo de este tutorial es implemetar consultas en SQLite3 para analizar, procesar y filtrar datos usando lenguaje SQL estándar.</p>
 <section id="Fuentes-de-datos">
-<h2>Fuentes de datos<a class="headerlink" href="#Fuentes-de-datos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Fuentes de datos<a class="headerlink" href="#Fuentes-de-datos" title="Enlace permanente a este encabezado"></a></h2>
 <p>Los archivos usados en este tutorial se encuentran almacenados en la carpeta actual</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
@@ -406,9 +419,9 @@ div.rendered_html tbody tr:hover {
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/jdvelasq/datalabs/master/datasets/drivers/&quot;</span>
 
 <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
-    <span class="o">!</span>wget --quiet <span class="o">{</span>url + filename<span class="o">}</span> -P /tmp/
+    <span class="o">!</span>wget<span class="w"> </span>--quiet<span class="w"> </span><span class="o">{</span>url<span class="w"> </span>+<span class="w"> </span>filename<span class="o">}</span><span class="w"> </span>-P<span class="w"> </span>/tmp/
 
-<span class="o">!</span>ls -1 /tmp/*.csv
+<span class="o">!</span>ls<span class="w"> </span>-1<span class="w"> </span>/tmp/*.csv
 </pre></div>
 </div>
 </div>
@@ -437,7 +450,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Preparación">
-<h2>Preparación<a class="headerlink" href="#Preparación" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Preparación<a class="headerlink" href="#Preparación" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -460,7 +473,7 @@ div.rendered_html tbody tr:hover {
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
 <span class="c1"># Se imprime el final del archivo drivers</span>
 <span class="c1">#</span>
-<span class="o">!</span>tail -n <span class="m">5</span> /tmp/drivers.csv
+<span class="o">!</span>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">5</span><span class="w"> </span>/tmp/drivers.csv
 </pre></div>
 </div>
 </div>
@@ -480,7 +493,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>tail -n <span class="m">5</span> /tmp/timesheet.csv
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">5</span><span class="w"> </span>/tmp/timesheet.csv
 </pre></div>
 </div>
 </div>
@@ -498,7 +511,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Creación-y-carga-de-datos-de-datos-para-la-tabla-drivers-usando-pandas">
-<h2>Creación y carga de datos de datos para la tabla <code class="docutils literal notranslate"><span class="pre">drivers</span></code> usando pandas<a class="headerlink" href="#Creación-y-carga-de-datos-de-datos-para-la-tabla-drivers-usando-pandas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Creación y carga de datos de datos para la tabla <code class="docutils literal notranslate"><span class="pre">drivers</span></code> usando pandas<a class="headerlink" href="#Creación-y-carga-de-datos-de-datos-para-la-tabla-drivers-usando-pandas" title="Enlace permanente a este encabezado"></a></h2>
 <p>En el siguiente código, los datos son cargados con pandas, para luego crear la tabla de la base de datos a partir del DataFrame. Note que no hay que crear la tabla primero en la base de datos, sino que pandas la crea directamente.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
@@ -597,7 +610,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Creación-y-carga-de-datos-de-la-tabla-timesheet">
-<h2>Creación y carga de datos de la tabla <code class="docutils literal notranslate"><span class="pre">timesheet</span></code><a class="headerlink" href="#Creación-y-carga-de-datos-de-la-tabla-timesheet" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Creación y carga de datos de la tabla <code class="docutils literal notranslate"><span class="pre">timesheet</span></code><a class="headerlink" href="#Creación-y-carga-de-datos-de-la-tabla-timesheet" title="Enlace permanente a este encabezado"></a></h2>
 <p>Se procede a cargar los datos para el archivo <code class="docutils literal notranslate"><span class="pre">time_sheet</span></code>.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
@@ -683,14 +696,14 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Cantidad-de-horas-y-millas-de-cada-conductor-por-año.">
-<h2>Cantidad de horas y millas de cada conductor por año.<a class="headerlink" href="#Cantidad-de-horas-y-millas-de-cada-conductor-por-año." title="Enlazar permanentemente con este título"></a></h2>
+<h2>Cantidad de horas y millas de cada conductor por año.<a class="headerlink" href="#Cantidad-de-horas-y-millas-de-cada-conductor-por-año." title="Enlace permanente a este encabezado"></a></h2>
 <p>En la siguiente consulta se desea obtener para cada conductor la cantidad de horas y millas por año.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">SELECT</span>
 <span class="sd">    driverId,</span>
 <span class="sd">    sum(hours_logged),</span>
@@ -748,7 +761,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Subconsultas">
-<h2>Subconsultas<a class="headerlink" href="#Subconsultas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Subconsultas<a class="headerlink" href="#Subconsultas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
@@ -759,7 +772,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># tabla drivers.</span>
 <span class="c1">#</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">SELECT</span>
 <span class="sd">    *</span>
 <span class="sd">FROM</span>
@@ -833,14 +846,14 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Consulta-para-unir-las-tablas">
-<h2>Consulta para unir las tablas<a class="headerlink" href="#Consulta-para-unir-las-tablas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Consulta para unir las tablas<a class="headerlink" href="#Consulta-para-unir-las-tablas" title="Enlace permanente a este encabezado"></a></h2>
 <p>El paso final consiste en crear una consulta que agregue el nombre del conductor de la tabla <code class="docutils literal notranslate"><span class="pre">drivers</span></code> con la cantidad de horas y millas por año.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">SELECT</span>
 <span class="sd">    d.driverId,</span>
 <span class="sd">    d.name,</span>
@@ -915,7 +928,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># Conductor con más horas registradas</span>
 <span class="c1">#</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">SELECT</span>
 <span class="sd">    d.driverId,</span>
 <span class="sd">    d.name,</span>
@@ -954,13 +967,13 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Creación-de-un-DataFrame-usando-una-consulta">
-<h2>Creación de un DataFrame usando una consulta<a class="headerlink" href="#Creación-de-un-DataFrame-usando-una-consulta" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Creación de un DataFrame usando una consulta<a class="headerlink" href="#Creación-de-un-DataFrame-usando-una-consulta" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">SELECT</span>
 <span class="sd">    d.driverId,</span>
 <span class="sd">    d.name,</span>
@@ -1000,14 +1013,14 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Almacenamiento-de-los-resultados">
-<h2>Almacenamiento de los resultados<a class="headerlink" href="#Almacenamiento-de-los-resultados" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Almacenamiento de los resultados<a class="headerlink" href="#Almacenamiento-de-los-resultados" title="Enlace permanente a este encabezado"></a></h2>
 <p>Los resultados de la consulta son cargados directamente a variable <code class="docutils literal notranslate"><span class="pre">summary</span></code> c como una lista de tuplas. El contenido de la variable es transformado para escribir un archivo de texto en formato CSV que pueda ser consultado por otras aplicaciones.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">summary</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">SELECT</span>
 <span class="sd">    d.driverId,</span>
 <span class="sd">    d.name,</span>
@@ -1052,7 +1065,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>head /tmp/summary.csv
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>head<span class="w"> </span>/tmp/summary.csv
 </pre></div>
 </div>
 </div>

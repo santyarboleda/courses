@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Creación y personalización de una gráfica en Matplotlib — 12:05 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -79,6 +85,9 @@
 <li class="toctree-l3"><a class="reference internal" href="1-18_bullet_plot.html">Gráficas de bala — 4:35 min</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
@@ -100,10 +109,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../matplotlib.html">Visualización de datos con Matplotlib</a> &raquo;</li>
-      <li>Creación y personalización de una gráfica en Matplotlib — 12:05 min</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../matplotlib.html">Visualización de datos con Matplotlib</a></li>
+      <li class="breadcrumb-item active">Creación y personalización de una gráfica en Matplotlib — 12:05 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/matplotlib/notebooks/1-03_basics.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -223,10 +232,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -392,14 +402,14 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Creación-y-personalización-de-una-gráfica-en-Matplotlib-—-12:05-min">
-<h1>Creación y personalización de una gráfica en Matplotlib — 12:05 min<a class="headerlink" href="#Creación-y-personalización-de-una-gráfica-en-Matplotlib-—-12:05-min" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Creación y personalización de una gráfica en Matplotlib — 12:05 min<a class="headerlink" href="#Creación-y-personalización-de-una-gráfica-en-Matplotlib-—-12:05-min" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p>12:05 min | Última modificación: Octubre 6, 2021</p></li>
 </ul>
 <p>Matplotlib es una de las principales librerías utilizadas para graficación de datos en Python. En este tutorial se explica como crear y personalizar un gráfico simple.</p>
 <p><strong>Matplotlib cheatsheets</strong>: <a class="reference external" href="https://github.com/matplotlib/cheatsheets#cheatsheets">https://github.com/matplotlib/cheatsheets#cheatsheets</a></p>
 <section id="Datos">
-<h2>Datos<a class="headerlink" href="#Datos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Datos<a class="headerlink" href="#Datos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -430,7 +440,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Gráfico-inicial">
-<h2>Gráfico inicial<a class="headerlink" href="#Gráfico-inicial" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Gráfico inicial<a class="headerlink" href="#Gráfico-inicial" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -462,7 +472,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Paso-1:-Tamaño-del-gráfico">
-<h2>Paso 1: Tamaño del gráfico<a class="headerlink" href="#Paso-1:-Tamaño-del-gráfico" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Paso 1: Tamaño del gráfico<a class="headerlink" href="#Paso-1:-Tamaño-del-gráfico" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -493,7 +503,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Paso-2:-Se-agrega-el-títulos-y-los-nombres-de-los-ejes.">
-<h2>Paso 2: Se agrega el títulos y los nombres de los ejes.<a class="headerlink" href="#Paso-2:-Se-agrega-el-títulos-y-los-nombres-de-los-ejes." title="Enlazar permanentemente con este título"></a></h2>
+<h2>Paso 2: Se agrega el títulos y los nombres de los ejes.<a class="headerlink" href="#Paso-2:-Se-agrega-el-títulos-y-los-nombres-de-los-ejes." title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -525,7 +535,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Paso-3:-Se-personalizan-las-barras">
-<h2>Paso 3: Se personalizan las barras<a class="headerlink" href="#Paso-3:-Se-personalizan-las-barras" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Paso 3: Se personalizan las barras<a class="headerlink" href="#Paso-3:-Se-personalizan-las-barras" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -562,7 +572,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Paso-4:-Se-formatea-el-eje-X">
-<h2>Paso 4: Se formatea el eje X<a class="headerlink" href="#Paso-4:-Se-formatea-el-eje-X" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Paso 4: Se formatea el eje X<a class="headerlink" href="#Paso-4:-Se-formatea-el-eje-X" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -601,7 +611,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Paso-5:-Se-formatea-el-eje-Y">
-<h2>Paso 5: Se formatea el eje Y<a class="headerlink" href="#Paso-5:-Se-formatea-el-eje-Y" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Paso 5: Se formatea el eje Y<a class="headerlink" href="#Paso-5:-Se-formatea-el-eje-Y" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -663,7 +673,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Paso-6:-Se-formatea-el-fondo">
-<h2>Paso 6: Se formatea el fondo<a class="headerlink" href="#Paso-6:-Se-formatea-el-fondo" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Paso 6: Se formatea el fondo<a class="headerlink" href="#Paso-6:-Se-formatea-el-fondo" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
@@ -722,7 +732,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Paso-7:-Se-ajusta-el-tamaño-de-la-figura">
-<h2>Paso 7: Se ajusta el tamaño de la figura<a class="headerlink" href="#Paso-7:-Se-ajusta-el-tamaño-de-la-figura" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Paso 7: Se ajusta el tamaño de la figura<a class="headerlink" href="#Paso-7:-Se-ajusta-el-tamaño-de-la-figura" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
@@ -786,7 +796,7 @@ div.rendered_html tbody tr:hover {
 <img alt="matplotlib_css_colors.png" src="../../../_images/matplotlib_css_colors.png" />
 </section>
 <section id="Sitios-de-referencia-con-ejemplos">
-<h2>Sitios de referencia con ejemplos<a class="headerlink" href="#Sitios-de-referencia-con-ejemplos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Sitios de referencia con ejemplos<a class="headerlink" href="#Sitios-de-referencia-con-ejemplos" title="Enlace permanente a este encabezado"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-master-plots-python/">https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-master-plots-python/</a></p></li>
 </ul>

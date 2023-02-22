@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Concatenacióny fusión de dataframes (concat() y append()) — 11:16 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -72,6 +78,13 @@
 <li class="toctree-l3"><a class="reference internal" href="2-13-python4excel.html">Pandas para usuarios de Microsoft Excel — 19:50 min</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../limpieza_de_datos/limpieza_de_datos.html">Limpieza de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../narrativa_de_datos/narrativa_de_datos.html">Narrativa de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../estadistica_descriptiva/estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mineria_de_texto/mineria_de_texto.html">Minería de texto</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../big_data.html">Big Data</a></li>
@@ -93,10 +106,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../manipulacion_datos.html">Manipulación de Datos con Pandas</a> &raquo;</li>
-      <li>Concatenacióny fusión de dataframes (concat() y append()) — 11:16 min</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
+      <li class="breadcrumb-item active">Concatenacióny fusión de dataframes (concat() y append()) — 11:16 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/manipulacion_datos/notebooks/1-06_concatenacion_y_fusion.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -216,10 +229,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -385,7 +399,7 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Concatenacióny-fusión-de-dataframes-(concat()-y-append())-—-11:16-min">
-<h1>Concatenacióny fusión de dataframes (concat() y append()) — 11:16 min<a class="headerlink" href="#Concatenacióny-fusión-de-dataframes-(concat()-y-append())-—-11:16-min" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Concatenacióny fusión de dataframes (concat() y append()) — 11:16 min<a class="headerlink" href="#Concatenacióny-fusión-de-dataframes-(concat()-y-append())-—-11:16-min" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p>11:16 min | Última modificación: Octubre 6, 2021</p></li>
 </ul>
@@ -674,7 +688,7 @@ Writing /tmp/bonus.csv
 </pre></div></div>
 </div>
 <section id="Concatenación-usando-un-campo-clave">
-<h2>Concatenación usando un campo clave<a class="headerlink" href="#Concatenación-usando-un-campo-clave" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Concatenación usando un campo clave<a class="headerlink" href="#Concatenación-usando-un-campo-clave" title="Enlace permanente a este encabezado"></a></h2>
 <p><strong>Creación del primer dataframe.</strong></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -953,7 +967,7 @@ clientId
 </div>
 </section>
 <section id="Append">
-<h2>Append<a class="headerlink" href="#Append" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Append<a class="headerlink" href="#Append" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
