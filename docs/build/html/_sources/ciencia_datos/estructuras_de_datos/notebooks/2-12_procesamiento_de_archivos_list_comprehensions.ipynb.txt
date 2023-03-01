@@ -7,10 +7,10 @@
     "tags": []
    },
    "source": [
-    "Procesamiento de un archivo usando list comprenhensions --- 6:34 min\n",
+    "Procesamiento de un archivo usando list comprenhensions \n",
     "===\n",
     "\n",
-    "* 6:34 min | Última modificación: Octubre 5, 2021"
+    "* Duración de la lección: 7 min"
    ]
   },
   {

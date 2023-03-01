@@ -7,10 +7,10 @@
     "tags": []
    },
    "source": [
-    "Iteradores --- 5:38 min\n",
+    "Iteradores\n",
     "===\n",
     "\n",
-    "* 05:38 min | Última modificación: Octubre 5, 2021"
+    "* Duración de la lección: 6 min"
    ]
   },
   {

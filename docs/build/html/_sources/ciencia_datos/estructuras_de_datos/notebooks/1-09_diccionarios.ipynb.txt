@@ -7,10 +7,10 @@
     "tags": []
    },
    "source": [
-    "Diccionarios --- 11:22 min\n",
+    "Diccionarios \n",
     "===\n",
     "\n",
-    "* 11:22 min | Última modificación: Octubre 5, 2021 "
+    "* Duración de la lección: 11:22 min "
    ]
   },
   {

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fusión (merging/join) de datasets — 14:56 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
+  <title>Fusión (merging/join) de datasets &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -24,8 +24,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="Actualización de campos — 7:30 min" href="1-08_actualizacion_de_campos.html" />
-    <link rel="prev" title="Concatenacióny fusión de dataframes (concat() y append()) — 11:16 min" href="1-06_concatenacion_y_fusion.html" /> 
+    <link rel="next" title="Actualización de campos" href="1-08_actualizacion_de_campos.html" />
+    <link rel="prev" title="Concatenacióny fusión de dataframes (concat() y append())" href="1-06_concatenacion_y_fusion.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,13 +59,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../../errores_excepciones/errores_excepciones.html">Manejo de errores y excepciones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ejemplos_analisis_datos/ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../manipulacion_datos.html">Manipulación de Datos con Pandas</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="1-01_estructura_del_dataframe.html">Visualización de la estructura del dataframe — 10:54 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-02_seleccion_y_manejo_de_columnas.html">Selección y manejo de columnas — 5:34 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-03_seleccion_y_manejo_de_filas.html">Selección y manejo de filas — 5:35 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-04_propiedades_loc_iloc_iat.html">Propiedades loc, iloc, at e iat — 5:51 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-05_revision_operaciones_basicas.html">Caso práctico — Exportación de un subconjunto de datos — 6:29 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-06_concatenacion_y_fusion.html">Concatenacióny fusión de dataframes (concat() y append()) — 11:16 min</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Fusión (merging/join) de datasets — 14:56 min</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1-01_estructura_del_dataframe.html">Visualización de la estructura del dataframe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-02_seleccion_y_manejo_de_columnas.html">Selección y manejo de columnas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-03_seleccion_y_manejo_de_filas.html">Selección y manejo de filas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-04_propiedades_loc_iloc_iat.html">Propiedades loc, iloc, at e iat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-05_revision_operaciones_basicas.html">Caso práctico — Exportación de un subconjunto de datos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-06_concatenacion_y_fusion.html">Concatenacióny fusión de dataframes (concat() y append())</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Fusión (merging/join) de datasets</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Fusión-uno-a-uno-sobre-columnas-comunes">Fusión uno-a-uno sobre columnas comunes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Fusión-uno-a-uno-con-registros-incompletos">Fusión uno-a-uno con registros incompletos</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Fusión-muchos-a-uno">Fusión muchos-a-uno</a></li>
@@ -75,12 +75,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#Sufijos">Sufijos</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="1-08_actualizacion_de_campos.html">Actualización de campos — 7:30 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2-09_groupby.html">Agrupamiento y filtrado — 13:07 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2-10_redimensionamiento.html">Redimensionamiento de tablas — 10:31 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2-11_analisis_de_datos_con_pandas.html">Análisis de datos usando Pandas — 11:16 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2-12-comandos_equivalentes_de_SQL_en_pandas.html">Comandos equivalentes de SQL en Pandas — 18:15 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2-13-python4excel.html">Pandas para usuarios de Microsoft Excel — 19:50 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-08_actualizacion_de_campos.html">Actualización de campos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2-09_groupby.html">Agrupamiento y filtrado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2-10_redimensionamiento.html">Redimensionamiento de tablas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2-11_analisis_de_datos_con_pandas.html">Análisis de datos usando Pandas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2-12-comandos_equivalentes_de_SQL_en_pandas.html">Comandos equivalentes de SQL en Pandas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2-13-python4excel.html">Pandas para usuarios de Microsoft Excel</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
@@ -114,7 +114,7 @@
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
           <li class="breadcrumb-item"><a href="../manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
-      <li class="breadcrumb-item active">Fusión (merging/join) de datasets — 14:56 min</li>
+      <li class="breadcrumb-item active">Fusión (merging/join) de datasets</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/manipulacion_datos/notebooks/1-07_joins.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -403,10 +403,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<section id="Fusión-(merging/join)-de-datasets-—-14:56-min">
-<h1>Fusión (merging/join) de datasets — 14:56 min<a class="headerlink" href="#Fusión-(merging/join)-de-datasets-—-14:56-min" title="Enlace permanente a este encabezado"></a></h1>
+<section id="Fusión-(merging/join)-de-datasets">
+<h1>Fusión (merging/join) de datasets<a class="headerlink" href="#Fusión-(merging/join)-de-datasets" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
-<li><p>14:56 min | Última modificación: Octubre 6, 2021</p></li>
+<li><p>Duración de la lección: 15 min</p></li>
 </ul>
 <p>Realiza la unión de datasets de forma similar a como se hacen los joins en las bases de datos.</p>
 <div class="nbinput nblast docutils container">
@@ -1860,8 +1860,8 @@ Writing /tmp/data_2.csv
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
-        <a href="1-06_concatenacion_y_fusion.html" class="btn btn-neutral float-left" title="Concatenacióny fusión de dataframes (concat() y append()) — 11:16 min" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="1-08_actualizacion_de_campos.html" class="btn btn-neutral float-right" title="Actualización de campos — 7:30 min" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="1-06_concatenacion_y_fusion.html" class="btn btn-neutral float-left" title="Concatenacióny fusión de dataframes (concat() y append())" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="1-08_actualizacion_de_campos.html" class="btn btn-neutral float-right" title="Actualización de campos" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

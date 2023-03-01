@@ -4,9 +4,9 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# Caso práctico --- Exportación de un subconjunto de datos --- 6:29 min\n",
+    "# Caso práctico --- Exportación de un subconjunto de datos \n",
     "\n",
-    "* 6:29 min | Última modificación: Octubre 6, 2021 "
+    "* Duración de la lección: 6:29 min "
    ]
   },
   {

@@ -7,10 +7,10 @@
     "tags": []
    },
    "source": [
-    "Strings - Métodos disponibles --- 9 min\n",
+    "Strings - Métodos disponibles\n",
     "===\n",
     "\n",
-    "* 9 min | Última modificación: Octubre 4, 2021 "
+    "* Duración de la lección: 9 min"
    ]
   },
   {

@@ -5,10 +5,10 @@
    "id": "b96c1a52-8adc-4cde-96be-d192234c48d7",
    "metadata": {},
    "source": [
-    "Creación y personalización de una gráfica en Matplotlib --- 12:05 min\n",
+    "Creación y personalización de una gráfica en Matplotlib \n",
     "===\n",
     "\n",
-    "* 12:05 min | Última modificación: Octubre 6, 2021 "
+    "* Duración de la lección: 12:05 min "
    ]
   },
   {

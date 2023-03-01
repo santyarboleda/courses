@@ -8,7 +8,7 @@
     "Uso de básico de Google Colaboratory\n",
     "===\n",
     "\n",
-    "* *5:00 min* | Última modificación: Septiembre 13, 2021."
+    "* Duración de la lección: 5 min "
    ]
   },
   {

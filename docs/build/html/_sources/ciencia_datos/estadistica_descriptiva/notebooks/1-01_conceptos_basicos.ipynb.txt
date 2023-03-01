@@ -12,7 +12,7 @@
     "Introducción al Análisis Exploratorio Cuantitativo de Datos\n",
     "===\n",
     "\n",
-    "* 10:55 min | Última modificación: Diciembre 13, 2021 "
+    "* Duración de la lección:: 10:55 min "
    ]
   },
   {

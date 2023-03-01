@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Verificación de rangos numéricos y de fecha — 10:06 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
+  <title>Verificación de rangos numéricos y de fecha &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -24,8 +24,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="Manejo de categorías — 11:35" href="1-03_manejo_de_categorias.html" />
-    <link rel="prev" title="Verificación del tipo de los datos — 4:30 min" href="1-01_tipos_de_dato.html" /> 
+    <link rel="next" title="Manejo de categorías" href="1-03_manejo_de_categorias.html" />
+    <link rel="prev" title="Verificación del tipo de los datos" href="1-01_tipos_de_dato.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -62,16 +62,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ingestion_datos_usando_python/ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../limpieza_de_datos.html">Limpieza de datos</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="1-01_tipos_de_dato.html">Verificación del tipo de los datos — 4:30 min</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Verificación de rangos numéricos y de fecha — 10:06 min</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1-01_tipos_de_dato.html">Verificación del tipo de los datos</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Verificación de rangos numéricos y de fecha</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Rangos-numéricos">Rangos numéricos</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Rangos-de-fecha">Rangos de fecha</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="1-03_manejo_de_categorias.html">Manejo de categorías — 11:35</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-04_rango_de_datos.html">Registros duplicados — 6:15 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-05_unificacion_de_texto.html">Unificación de cadenas de texto — 12:21 min</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-06_formato_de_fechas.html">Formato de Fechas — 2:22 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-03_manejo_de_categorias.html">Manejo de categorías</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-04_rango_de_datos.html">Registros duplicados</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-05_unificacion_de_texto.html">Unificación de cadenas de texto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-06_formato_de_fechas.html">Formato de Fechas</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../matplotlib/matplotlib.html">Visualización de datos con Matplotlib</a></li>
@@ -102,7 +102,7 @@
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
           <li class="breadcrumb-item"><a href="../limpieza_de_datos.html">Limpieza de datos</a></li>
-      <li class="breadcrumb-item active">Verificación de rangos numéricos y de fecha — 10:06 min</li>
+      <li class="breadcrumb-item active">Verificación de rangos numéricos y de fecha</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/limpieza_de_datos/notebooks/1-02_rangos_numericos.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -391,10 +391,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<section id="Verificación-de-rangos-numéricos-y-de-fecha-—-10:06-min">
-<h1>Verificación de rangos numéricos y de fecha — 10:06 min<a class="headerlink" href="#Verificación-de-rangos-numéricos-y-de-fecha-—-10:06-min" title="Enlace permanente a este encabezado"></a></h1>
+<section id="Verificación-de-rangos-numéricos-y-de-fecha">
+<h1>Verificación de rangos numéricos y de fecha<a class="headerlink" href="#Verificación-de-rangos-numéricos-y-de-fecha" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
-<li><p>10:06 min | Última modificación: Octubre 14, 2021 | <a class="reference external" href="https://youtu.be/W22Kr9LGw6I">YouTube</a></p></li>
+<li><p>Duración de la lección: 10 min</p></li>
 </ul>
 <section id="Rangos-numéricos">
 <h2>Rangos numéricos<a class="headerlink" href="#Rangos-numéricos" title="Enlace permanente a este encabezado"></a></h2>
@@ -1105,8 +1105,8 @@ dtype: object
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
-        <a href="1-01_tipos_de_dato.html" class="btn btn-neutral float-left" title="Verificación del tipo de los datos — 4:30 min" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="1-03_manejo_de_categorias.html" class="btn btn-neutral float-right" title="Manejo de categorías — 11:35" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="1-01_tipos_de_dato.html" class="btn btn-neutral float-left" title="Verificación del tipo de los datos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="1-03_manejo_de_categorias.html" class="btn btn-neutral float-right" title="Manejo de categorías" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -6,10 +6,10 @@
     "tags": []
    },
    "source": [
-    "Redimensionamiento de tablas --- 10:31 min\n",
+    "Redimensionamiento de tablas \n",
     "=======\n",
     "\n",
-    "* 10:31 min | Última modificación: Octubre 6, 2021 "
+    "* Duración de la lección: 10:31 min"
    ]
   },
   {

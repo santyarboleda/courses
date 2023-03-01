@@ -7,10 +7,10 @@
     "tags": []
    },
    "source": [
-    "Uso de Python como una calculadora --- 20 min\n",
+    "Uso de Python como una calculadora \n",
     "===\n",
     "\n",
-    "* 20 min | Última modificación: Octubre 4, 2021"
+    "* Duración de la lección: 20 min"
    ]
   },
   {

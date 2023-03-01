@@ -6,10 +6,10 @@
     "tags": []
    },
    "source": [
-    "Agrupamiento y filtrado --- 13:07 min\n",
+    "Agrupamiento y filtrado \n",
     "===\n",
     "\n",
-    "* 13:07 min | Última modificación: Octubre 6, 2021 "
+    "* Duración de la lección: 13:07 min "
    ]
   },
   {
